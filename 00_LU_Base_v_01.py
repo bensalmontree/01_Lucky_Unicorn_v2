@@ -30,6 +30,8 @@ def instructions():
     print("Horse: Balance decreases by $0.50")
     print("Zebra: Balance decreases by $0.50")
     print("Donkey: Balance decreases by $1.00\n")
+    print("Can you avoid the donkeys, and get the unicorns"
+          " and walk home with the money??\n")
     print("Hint: To quit while you're ahead, type in 'xxx' instead of <enter>\n")
     return ""
 
@@ -92,7 +94,8 @@ while play_again == "":
 
     # Print round number
     print()
-    print("*** Round #{} ***".format(rounds_played))
+    statement_generator("Round #{}".format(rounds_played),".")
+    print()
 
     chosen_num = random.randint(1, 100)
 
